@@ -2,46 +2,6 @@
 
 ## Parte 1
 
-Punto 7: Documente los tiempos de respuesta para dicho endpoint usando los siguientes valores:
-
-1000000 => 31.70 s <br>
-1010000 => 31.06 s <br>
-1020000 => 26.25 s <br>
-1030000 => 30.65 s <br>
-1040000 => 29.53 s <br>
-1050000 => 29.86 s <br>
-1060000 => 30.92 s <br>
-1070000 => 29.52 s <br>
-1080000 => 31.69 s <br>
-1090000 => 35.81 s <br>
-
-Punto 8: Uso de CPU
-
-![image](https://user-images.githubusercontent.com/60078276/144887220-b5be21b0-c32c-499e-9857-f6077872917b.png)
-
-Punto 9: Usando Postman para simular una carga concurrente a nuestro sistema:
-
-![image](https://user-images.githubusercontent.com/60078276/144908321-0a7a38bd-06ec-48b9-aee2-bb0b4fcd3af9.png)
-
-1000000 => 21.55 s
-1010000 => 21.16 s
-1020000 => 22.25 s
-1030000 => 23.21 s 
-1040000 => 24.45 s
-1050000 => 25.58 s
-1060000 => 25.99 s
-1070000 => 26.11 s
-1080000 => 26.66 s
-1090000 => 27.11 s
-
-Punto 8 nuevamente: Uso de CPU
-
-![image](https://user-images.githubusercontent.com/60078276/144909961-636baa43-80c6-4b91-979c-8111bd74f680.png)
-
-Punto 9 Nuevamente: Usando Postman para simular una carga concurrente a nuestro sistema:
-
-![image](https://user-images.githubusercontent.com/60078276/144911322-2a6c7091-c286-4547-972b-8ddf8c3ddc14.png)
-
 Punto 12: Este modelo de escalabilidad no ofrece la capacidad de rendimiento suficiente pues como se evindeció en las pruebas anteriores, el rendidmiento obtenido con una maquina mucho más potente que la inicial, no dió un rendimiento proporcinalente superior.
 
 #### Preguntas
@@ -119,3 +79,4 @@ Sí, en promedio demoró 10 segundos menos cada ejecuciión pero el porcentaje d
 11. Aumente la cantidad de ejecuciones paralelas del comando de postman a 4. ¿El comportamiento del sistema es porcentualmente mejor?
 
 
+## Parte 2
