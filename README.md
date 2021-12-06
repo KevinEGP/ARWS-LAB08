@@ -2,13 +2,13 @@
 
 ## Parte 1
 
-Punto 12: Este modelo de escalabilidad no ofrece la capacidad de rendimiento suficiente pues como se evidecia n la información a continuación, el rendimiento obtenido con una maquina mucho más potente que la inicial, no dió un rendimiento proporcinalente superior.
+Punto 12: Este modelo de escalabilidad no ofrece la capacidad de rendimiento suficiente pues como se evidecia en la información a continuación, el rendimiento obtenido con una maquina mucho más potente que la inicial, no dió un rendimiento proporcinalmente superior.
 
 #### Preguntas
 
 1. ¿Cuántos y cuáles recursos crea Azure junto con la VM?
 
-Se crea el recurso de la maquina virtual, una interfaz de res, unadirección ip publica, un grupo de seguridad en la red y una red virutal.
+Se crea el recurso de la maquina virtual, una interfaz de red, una dirección ip publica, un grupo de seguridad en la red y una red virutal.
 
 2. ¿Brevemente describa para qué sirve cada recurso?
 
@@ -20,7 +20,7 @@ Red virtual: Es una red virtualizada que conecta a los recursos. <br>
 
 3. ¿Al cerrar la conexión ssh con la VM, por qué se cae la aplicación que ejecutamos con el comando npm FibonacciApp.js? ¿Por qué debemos crear un Inbound port rule antes de acceder al servicio?
 
-Se cierra porque este proceso se ejecuta en la instancia de la terminal por la que nos conectamos y al desconetarnos esta instancia lo desaparece. Se debe crear el puerto de entrada para que el proceso sea visible y accesible desde otros dispositivos.
+Se cierra porque este proceso se ejecuta en la instancia de la terminal por la que nos conectamos y al desconectarnos esta instancia desaparece. Se debe crear el puerto de entrada para que el proceso sea visible y accesible desde otros dispositivos.
 
 4. Adjunte tabla de tiempos e interprete por qué la función tarda tando tiempo.
 
@@ -47,6 +47,8 @@ B2ms <br>
 1080000 => 26.66 s <br>
 1090000 => 27.11 s <br>
 
+Tarda demasiado tiempo porque no tiene ningun tipo de memoria sino que debe calcular cada iteración nuevamente
+
 5. Adjunte imágen del consumo de CPU de la VM e interprete por qué la función consume esa cantidad de CPU.
 
 B1ls <br>
@@ -55,11 +57,15 @@ B1ls <br>
 B2ms <br>
 ![image](https://user-images.githubusercontent.com/60078276/144911322-2a6c7091-c286-4547-972b-8ddf8c3ddc14.png)
 
+Dado que debe calcular en cada instante toda la recurrencia sin memorizar, el CPU se utiliza al máximo
+
 6. Adjunte la imagen del resumen de la ejecución de Postman. Interprete:
 
 Tiempos de ejecución de cada petición.
 
 ![image](https://user-images.githubusercontent.com/60078276/144922036-50f6b4fd-bba7-4fd9-b0b4-fa8f286b57dd.png)
+
+
 
 Si hubo fallos documentelos y explique.
 
@@ -73,17 +79,19 @@ B2ms ofrece un rendimiento maximo del doble en comparación a B1ls, pero con en 
 
 8. ¿Aumentar el tamaño de la VM es una buena solución en este escenario?, ¿Qué pasa con la FibonacciApp cuando cambiamos el tamaño de la VM?
 
-Se redujo en promedio 10 segundos para cada uno de la mediciones realizadas.
+No es una buena opción en relación al precio y al rendimiento. La funcion tiene más cores para ejecutarse en paralelo.
 
 9. ¿Qué pasa con la infraestructura cuando cambia el tamaño de la VM? ¿Qué efectos negativos implica?
 
-El principal efecto negativo es el precio, pues pasa de $0.0144/hour a $0.0912/hour
+El principal efecto negativo es el precio, pues pasa de $0.0144/hour a $0.0912/hour y esto a gran escala sería un problema precisamente de escalabilidad.
 
 10. ¿Hubo mejora en el consumo de CPU o en los tiempos de respuesta? Si/No ¿Por qué?
 
 Sí, en promedio demoró 10 segundos menos cada ejecuciión pero el porcentaje de uso de CPU fue similar.
 
 11. Aumente la cantidad de ejecuciones paralelas del comando de postman a 4. ¿El comportamiento del sistema es porcentualmente mejor?
+
+No, dado que son ejecuciones independientes entre ellas, el comportamiento es similar.
 
 
 ## Parte 2
