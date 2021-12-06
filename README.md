@@ -58,7 +58,14 @@ B2ms <br>
 6. Adjunte la imagen del resumen de la ejecución de Postman. Interprete:
 
 Tiempos de ejecución de cada petición.
+
+![image](https://user-images.githubusercontent.com/60078276/144922036-50f6b4fd-bba7-4fd9-b0b4-fa8f286b57dd.png)
+
 Si hubo fallos documentelos y explique.
+
+![image](https://user-images.githubusercontent.com/60078276/144922130-0b97d732-979f-41db-8141-16c5103c6df7.png)
+
+
 
 7. ¿Cuál es la diferencia entre los tamaños B2ms y B1ls (no solo busque especificaciones de infraestructura)?
 
