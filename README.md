@@ -2,7 +2,7 @@
 
 ## Parte 1
 
-Punto 12: Este modelo de escalabilidad no ofrece la capacidad de rendimiento suficiente pues como se evindeció en las pruebas anteriores, el rendidmiento obtenido con una maquina mucho más potente que la inicial, no dió un rendimiento proporcinalente superior.
+Punto 12: Este modelo de escalabilidad no ofrece la capacidad de rendimiento suficiente pues como se evidecia n la información a continuación, el rendimiento obtenido con una maquina mucho más potente que la inicial, no dió un rendimiento proporcinalente superior.
 
 #### Preguntas
 
