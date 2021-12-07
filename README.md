@@ -128,7 +128,19 @@ Son reglas de seguridad que filtran el trafico hacia los recursos de Azure, pare
 
 9. Informe de newman 1 (Punto 2)
 
+Balanceo de carga con 3 VM y 2 Peticiones concurrentes
+
 ![Screenshot from 2021-12-06 18-31-32](https://user-images.githubusercontent.com/60078276/144948914-6f0cf50e-4d37-4325-8722-1a5145ca7f5d.png)
+
+
+Balanceo de carga con 4 VM y 4 peticiones concurrentes
+
+![Screenshot from 2021-12-06 18-50-00](https://user-images.githubusercontent.com/60078276/144949049-be072790-3b8b-4d3d-81e1-ca2333cee564.png)
+
+![Screenshot from 2021-12-06 18-50-06](https://user-images.githubusercontent.com/60078276/144949134-6f8474f9-40ae-4c08-8301-20f467d727dd.png)
+
+![Screenshot from 2021-12-06 18-50-09](https://user-images.githubusercontent.com/60078276/144949153-345851d4-4e3a-487b-aaf4-4222773a983f.png)
+
 
 
 10. Presente el Diagrama de Despliegue de la solución.
