@@ -95,3 +95,40 @@ No, dado que son ejecuciones independientes entre ellas, el comportamiento es si
 
 
 ## Parte 2
+
+1. ¿Cuáles son los tipos de balanceadores de carga en Azure y en qué se diferencian?, ¿Qué es SKU, qué tipos hay y en qué se diferencian?, ¿Por qué el balanceador de carga necesita una IP pública?
+
+Load Balancer estándar: Se encarga de equilibrar la carga del tráfico de la capa de red, enruta el tráfico dentro de las regiones y entre ellas.
+Gateway Load Balancer: Permite encadenamiento de servicios, como análisis, DDoS en línea, firewall, etc.
+Load Balancer básico: Para las aplicaciones a pequeña escala que no necesitan alta disponibilidad o redundancia.
+
+2. ¿Cuál es el propósito del Backend Pool?
+
+Backend pools: Son un conjuntos de servidores a los que se redirige el tráfico si se cumple alguna de las reglas establecidas.
+
+3. ¿Cuál es el propósito del Health Probe?
+
+Health Probe: Permite idnetificar cuales de l os servidores del backend pool están activos.
+
+4. ¿Cuál es el propósito de la Load Balancing Rule? ¿Qué tipos de sesión persistente existen, por qué esto es importante y cómo puede afectar la escalabilidad del sistema?.
+
+Las Load Balancing Rule permiten configurar el tráfico al que se envía a al Backend Pool, de tal forma que se filtre para algunos de estos servdores.
+
+5. ¿Qué es una Virtual Network? ¿Qué es una Subnet? ¿Para qué sirven los address space y address range?
+
+Permite a muchos recursos de Azure comunicarse de forma segura entre usuarios, con Internet y con las redes locales.
+
+6. ¿Qué son las Availability Zone y por qué seleccionamos 3 diferentes zonas?. ¿Qué significa que una IP sea zone-redundant?
+
+Las Availability Zone son secciones en las que se dividen fsicamente los recursos y son independientes para evitar fallos de software o hardware. Las IP zone-redundant significa que están estna dentro de una Availability Zone que tiene 3 zonas activas. 
+
+8. ¿Cuál es el propósito del Network Security Group?
+
+Son reglas de seguridad que filtran el trafico hacia los recursos de Azure, pare denegar tráfico no deseado dentro de una red virtual Azure.
+
+9. Informe de newman 1 (Punto 2)
+
+![Screenshot from 2021-12-06 18-31-32](https://user-images.githubusercontent.com/60078276/144948914-6f0cf50e-4d37-4325-8722-1a5145ca7f5d.png)
+
+
+10. Presente el Diagrama de Despliegue de la solución.
