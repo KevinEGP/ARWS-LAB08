@@ -144,3 +144,6 @@ Balanceo de carga con 4 VM y 4 peticiones concurrentes
 
 
 10. Presente el Diagrama de Despliegue de la solución.
+
+![Load_Balancing drawio](https://user-images.githubusercontent.com/60078276/145038928-b3b49818-da4e-480f-a8d8-f1d54d531fc9.png)
+
